@@ -6,9 +6,8 @@
     font-family: pixels;
 }
 body{
-    background-image: url("./Asserts/level\ 1\ baground.jpg");
-    background-size: 105%;
-    background-position-x:-50px ;
+    background-image: url("./Asserts/Level\ 3\ \(1\).png");
+    background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 }
@@ -40,7 +39,7 @@ body{
 @media screen and (max-width:600px) {
     body{
         background-image: url("./Asserts/lvel1\ mobile\ bg.jpg");
-        background-size: 115% 354% ;
+        background-size: cover;
     }
     
     .game-over-popup{

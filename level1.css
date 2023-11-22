@@ -193,10 +193,10 @@ button{
     }
 }
 /* mobile responsive */
-@media screen and (max-width:600px) {
+@media (orientation:portrait) {
     body{
-        background-image: url("./Asserts/lvel1\ mobile\ bg.jpg");
-        background-size: 115% 154% ;
+        background-image: url("./Asserts/Android\ Large\ -\ 5.png");
+        background-size: cover ;
     }
     .howtoplay{
         position: relative;
@@ -282,16 +282,6 @@ button{
         left: 30px;
         height: 150px;
     }
-    #spider{
-        position: relative;
-        top: -20px;
-        height: 70px;
-    }
-    #rat{
-        position: relative;
-        top: -30px;
-        height: 60px;
-    }
     #score{
         position: relative;
         font-size: 1rem;
@@ -308,14 +298,14 @@ button{
     }
     .left-right{
         position: relative;
-        top: 300px;
+        top: 220px;
         display: flex;
         justify-content: flex-end;
         height: 60px;
     }
     #top-key{
         position: relative;
-        top: 240px;
+        top: 160px;
         left: 30px;
         height: 60px;
     }

@@ -49,7 +49,7 @@ body{
 @media screen and (max-width:600px) {
     body{
         background-image: url("./Asserts/lvel2\ mobile\ bg.png");
-        background-size: 115% 354% ;
+        background-size: cover ;
     }
     .game-won-popup{
         position: relative;

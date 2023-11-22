@@ -204,10 +204,10 @@ button{
 
 
 /* mobile responsive */
-@media screen and (max-width:600px) {
+@media (orientation:portrait){
     body{
-        background-image: url("./Asserts/lvel2\ mobile\ bg.png");
-        background-size: 115% 154% ;
+        background-image: url("./Asserts/Level\ 5-2.png");
+        background-size: cover ;
     }
     .howtoplay{
         position: relative;
@@ -279,29 +279,20 @@ button{
         font-size: .9rem;
         padding: 10px 25px 10px 25px;
     }
+
+
     .gamecontents{
         position: relative;
-        top: 260px;
+        top: 310px;
     }
     .coins{
         position: relative;
-        bottom: 130px;
         height: 40px;
     }
     #man{
         position: relative;
         left: 30px;
         height: 150px;
-    }
-    #spider{
-        position: relative;
-        top: -20px;
-        height: 70px;
-    }
-    #rat{
-        position: relative;
-        top: -30px;
-        height: 60px;
     }
     #score{
         position: relative;
@@ -319,18 +310,26 @@ button{
     }
     .left-right{
         position: relative;
-        top: 300px;
+        top: 110px;
         display: flex;
         justify-content: flex-end;
         height: 60px;
     }
     #top-key{
         position: relative;
-        top: 240px;
+        top: 50px;
         left: 30px;
         height: 60px;
     }
+    #snake,#coin2{
+        position: relative;
+        bottom: 150px;
+    }
     #centipedie{
         display: none;
+    }
+    #coin1,#coin2,#coin3,#coin4{
+        position: relative;
+        bottom: 220px;
     }
 }
