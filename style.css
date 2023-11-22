@@ -1,0 +1,73 @@
+@font-face {
+    font-family: pixels;
+    src: url("./Press_Start_2P/PressStart2P-Regular.ttf");
+}
+*{
+    font-family: pixels;
+}
+body{
+    background-image: url("./Asserts/Home\ page.png");
+    background-size: 104.5%;
+    background-position-x:-50px ;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+nav{
+    position: relative;
+    left: 60%;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 540px;
+}
+a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+h1{
+    position: relative;
+    left: 22%;
+    top: 304px;
+    color: white;
+    font-size: 3rem;
+}
+button{
+    position: relative;
+    left: 40%;
+    top: 500px;
+    background-color: #96CBEE;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 27px;
+    height: 60px;
+    width: 250px;
+}
+
+/* mobile responsive */
+@media screen and (max-width:600px) {
+    body{
+        background-size: 350%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        left: 320px;
+    }
+    h1{
+        position: relative;
+        color: white;
+        font-size: 1.4rem;
+        text-align: center;
+        width: 50px;
+    }
+    button{
+        height: 30px;
+        width: 150px;
+        font-size: 1rem;
+    }
+}

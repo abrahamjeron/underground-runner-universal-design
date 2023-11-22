@@ -1,0 +1,55 @@
+@font-face {
+    font-family: pixels;
+    src: url("./Press_Start_2P/PressStart2P-Regular.ttf");
+}
+*{
+    font-family: pixels;
+}
+body{
+    background-image: url("./Asserts/help\ page.png");
+    background-size: 105%;
+    background-position-x:-50px ;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.gamedescription{
+    position: relative;
+    top: 110px;
+    left: 20%;
+    background-color: #CAE1F0;
+    border-radius: 19px;
+    width: 850px;
+    height: 600px;
+}
+h1{
+    position: relative;
+    top: 100px;
+    left: 35px;
+    font-size: 1.5rem;
+}
+p{
+    position: relative;
+    top: 130px;
+    left: 100px;
+    text-align: left;
+    line-height: 44px;
+    font-size: 1.5rem;
+    padding-bottom: 70px;
+}
+img{
+    position: relative;
+    left: 89%;
+    bottom: 440px;
+    height: 70px;
+}
+a{
+    position: relative;
+    left: 41%;
+    top: 30px;
+    background-color: #96CBEE;
+    color: black;
+    font-size: 2rem;
+    padding: 10px 35px 10px 35px;
+    border-radius: 27px;
+    text-decoration: none;
+}

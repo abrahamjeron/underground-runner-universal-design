@@ -1,0 +1,62 @@
+@font-face {
+    font-family: pixels;
+    src: url("./Press_Start_2P/PressStart2P-Regular.ttf");
+}
+*{
+    font-family: pixels;
+}
+body{
+    background-image: url("./Asserts/level\ 2\ baground.jpg");
+    background-size: 105%;
+    background-position-x:-50px ;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.game-over-popup{
+    position: relative;
+    left: 35%;
+    top: 200px;
+    background-color: #CAE1F0;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 25px;
+    line-height: 55px;
+}.game-over-popup p{
+    font-size: 1.2rem;
+}
+.game-over-popup #yesbtn{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    background-color:#96CBEE;
+    width: 60px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 5px;
+}
+@media screen and (max-width:600px) {
+    body{
+        background-image: url("./Asserts/lvel2\ mobile\ bg.png");
+        background-size: 115% 354% ;
+    }
+    
+    .game-over-popup{
+        position: relative;
+        left: 15%;
+        top: 200px;
+        width: 350px;
+        height: 200px;
+        text-align: center;
+        border-radius: 25px;
+        line-height: 25px;
+    }
+    .game-over-popup p{
+        font-size: 1rem;
+    }
+    .game-over-popup #yesbtn{
+        position: relative;
+        top: 20px;
+    }
+}

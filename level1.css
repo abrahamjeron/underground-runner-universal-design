@@ -1,0 +1,322 @@
+@font-face {
+    font-family: pixels;
+    src: url("./Press_Start_2P/PressStart2P-Regular.ttf");
+}
+*{
+    font-family: pixels;
+}
+body{
+    background-image: url("./Asserts/Level\ 3\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+/* style for how to play box */
+.howtoplay{
+    position: relative;
+    left: 22%;
+    top: 180px;
+    background-color: #CAE1F0;
+    width: 880px;
+    height: 400px;
+    border-radius: 19px;
+    /* here-------->>>>>>>>>>>> */
+    /* display: none; */
+}
+h1{
+    position: relative;
+    left: 60px;
+    top: 45px;
+}
+#description{
+    position: relative;
+    top: 45px;
+    left: 120px;
+    font-size: 1.5rem;
+    line-height: 44px;
+}
+#arrowkeys{
+    position: relative;
+    left: 67%;
+    bottom: 130px;
+    height: 150px;
+}
+#leftarrow{
+    position: relative;
+    bottom: 40px;
+    right: 110px;
+    height: 50px;
+}
+#left{
+    position: relative;
+    left: 190px;
+    bottom: 90px;
+}
+#toparrow{
+    position: relative;
+    bottom: 145px;
+    left: 400px;
+    height: 60px;
+}
+#top{
+    position: relative;
+    left: 460px;
+    bottom: 200px;
+}
+#rightarrow{
+    position: relative;
+    left: 600px;
+    bottom: 245px;
+    height: 50px;
+}
+#right{
+    position: relative;
+    left: 670px;
+    bottom: 300px;
+}
+/* here------------>>>>>>>>>>>>>> */
+button{
+    position: relative;
+    left: 45%;
+    top: 230px;
+    font-size: 1.2rem;
+    background-color: #96CBEE;
+    padding: 20px 45px 20px 45px;
+    border: none;
+    border-radius: 27px;
+    /* display: none; */
+}
+
+/* game contents */
+#score{
+    position: relative;
+    bottom: 300px;
+    margin: 75px;
+    font-size: 2rem;
+    color: #E4E6FF;
+}
+.buttons{
+    position: relative;
+    left: 80%;
+    bottom: 425px;
+}
+#man{
+    position: relative;
+    left: 30px;
+    bottom: 25px;
+    height: 250px;   
+    transition: all 0.1s;
+    /* border: 2px solid red; */
+}
+#spider{
+    position: relative;
+    top: 10px;
+    /* border: 2px solid red; */
+    height: 120px;
+}
+#rat{
+    position: relative;
+    height: 80px;
+    /* border: 2px solid red; */
+}
+#coin1,#coin2,#coin3,#coin4{
+    position: relative;
+    left: 30px;
+}
+
+/* here------------------->>>>>>>>>>>>>>>>>>>>>>>>> */
+.gamecontents{
+    position: relative;
+    top: 240px;
+    display: none;
+}
+.coins{
+    position: relative;
+    bottom: 90px;
+    height: 100px;
+}
+.flipped{
+    transform: scaleX(-1);
+    transition: all 0s;
+}
+.mobile-reponsive-controls{
+    display: none;
+}
+/* setting animation for the moving elements */
+@keyframes spider {
+    0%{
+        left: 90%;
+    }
+    100%{
+        left: -40%;
+    }
+}
+@keyframes rat {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -40%;
+    }
+    
+}
+@keyframes coin1 {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -40%;
+    }
+}
+@keyframes coin2 {
+    0%{
+        left: 120%;
+    }
+    100%{
+        left: -40%;
+    }
+}
+@keyframes coin3 {
+    0%{
+        left: 140%;
+    }
+    100%{
+        left: -40%;
+    }
+}
+@keyframes coin4 {
+    0%{
+        left: 140%;
+    }
+    100%{
+        left: -40%;
+    }
+}
+/* mobile responsive */
+@media screen and (max-width:600px) {
+    body{
+        background-image: url("./Asserts/lvel1\ mobile\ bg.jpg");
+        background-size: 115% 154% ;
+    }
+    .howtoplay{
+        position: relative;
+        left: 15%;
+        top: 120px;
+        width: 350px;
+        height: 200px;
+        overflow-x: hidden;
+    }
+    h1{
+        position: relative;
+        font-size: 1rem;
+        left: 40px;
+        top: 25px;
+    }
+    #description{
+        position: relative;
+        top: 35px;
+        left: 50px;
+        font-size: .7rem;
+        line-height: 20px;
+    }
+    #arrowkeys{
+        position: relative;
+        left: 60%;
+        bottom: 40px;
+        height: 70px;
+    }
+    #leftarrow{
+        position: relative;
+        bottom: 0px;
+        right: 70px;
+        height: 20px;
+    }
+    #left{
+        position: relative;
+        left: 70px;
+        font-size: .5rem;
+        bottom: 20px;
+    }
+    #toparrow{
+        position: relative;
+        bottom: 45px;
+        left: 170px;
+        height: 25px;
+    }
+    #top{
+        position: relative;
+        left: 190px;
+        bottom: 70px;
+        font-size: .5rem;
+    }
+    #rightarrow{
+        position: relative;
+        left: 250px;
+        bottom: 93px;
+        height: 20px;
+    }
+    #right{
+        position: relative;
+        left: 270px;
+        bottom: 115px;
+        font-size: .5rem;
+    }
+    button{
+        position: relative;
+        left: 40%;
+        top: 230px;
+        font-size: .9rem;
+        padding: 10px 25px 10px 25px;
+    }
+    .gamecontents{
+        position: relative;
+        top: 230px;
+    }
+    .coins{
+        position: relative;
+        bottom: 80px;
+        height: 40px;
+    }
+    #man{
+        position: relative;
+        left: 30px;
+        height: 150px;
+    }
+    #spider{
+        position: relative;
+        top: -20px;
+        height: 70px;
+    }
+    #rat{
+        position: relative;
+        top: -30px;
+        height: 60px;
+    }
+    #score{
+        position: relative;
+        font-size: 1rem;
+        left: -40px;
+    }
+    #mute,#replay{
+        position: relative;
+        top: 30px;
+        right: 30px;
+        height: 50px;
+    }
+    .mobile-reponsive-controls{
+        display: inherit;
+    }
+    .left-right{
+        position: relative;
+        top: 300px;
+        display: flex;
+        justify-content: flex-end;
+        height: 60px;
+    }
+    #top-key{
+        position: relative;
+        top: 240px;
+        left: 30px;
+        height: 60px;
+    }
+}
