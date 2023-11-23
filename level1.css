@@ -9,6 +9,7 @@ body{
     background-image: url("./Asserts/Level\ 3\ \(1\).png");
     background-size: cover;
     background-repeat: no-repeat;
+     /* here-------->>>>>>>>>>>> */
     overflow: hidden;
 }
 /* style for how to play box */
@@ -123,7 +124,6 @@ button{
     position: relative;
     left: 30px;
 }
-
 /* here------------------->>>>>>>>>>>>>>>>>>>>>>>>> */
 .gamecontents{
     position: relative;
@@ -202,7 +202,7 @@ button{
         position: relative;
         left: 15%;
         top: 120px;
-        width: 350px;
+        width: 300px;
         height: 200px;
         overflow-x: hidden;
     }

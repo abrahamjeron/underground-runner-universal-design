@@ -130,7 +130,7 @@ startbtn.addEventListener("click",function(){
     // checking the collition of the obstalces
     var n = 0; 
     setInterval(()=>{
-        score.innerText=`score:${n}`;
+        score.innerText=`Coins:${n}`;
 
         var spiderLeft = (Math.abs(spider.getBoundingClientRect().left)+30);
         var spiderRight = Math.abs(spider.getBoundingClientRect().right  ) ;
@@ -181,23 +181,39 @@ startbtn.addEventListener("click",function(){
         }  
 
         if (((coin1Left < manLeft && manLeft < coin1Right) || (coin1Left < manRight && manRight < coin1Right))) {
-            n+=1;
+            n += 1;
+            coin1.style.visibility = 'hidden';
             coinsound.play();
+            setTimeout(function () {
+                coin1.style.visibility = 'visible';
+            }, 2000); 
         }
 
         if (((coin2Left < manLeft && manLeft < coin2Right) || (coin2Left < manRight && manRight < coin2Right))) {
-            n+=1;
+            n += 1;
+            coin2.style.visibility = 'hidden';
             coinsound.play();
+            setTimeout(function () {
+                coin2.style.visibility = 'visible';
+            }, 2000); 
         }
 
         if (((coin3Left < manLeft && manLeft < coin3Right) || (coin3Left < manRight && manRight < coin3Right))) {
-            n+=1;
+            n += 1;
+            coin3.style.visibility = 'hidden';
             coinsound.play();
+            setTimeout(function () {
+                coin3.style.visibility = 'visible';
+            }, 2000);
         }
 
         if (((coin4Left < manLeft && manLeft < coin4Right) || (coin4Left < manRight && manRight < coin4Right))) {
-            n+=1;
-            coinsound.play();
+            n += 1;
+            coin4.style.visibility = 'hidden';
+            coinsound.play(); 
+            setTimeout(function () {
+            coin4.style.visibility = 'visible';
+            }, 2000);
         }
 
 

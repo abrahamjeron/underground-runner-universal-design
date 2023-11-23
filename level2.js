@@ -28,12 +28,12 @@ startbtn.addEventListener('click', function() {
     bagroundmusic.play();
 
     //setting animation for the elements
-    snake.style.animation = 'snake 6s linear infinite';
-    centi.style.animation = 'centipiede 7s linear infinite'; 
+    snake.style.animation = 'snake 6.5s linear infinite';
+    centi.style.animation = 'centipiede 7.2s linear infinite'; 
     spider.style.animation = 'spider 5s linear infinite';
-    rat.style.animation = 'rat 9s linear infinite';
-    coin1.style.animation = 'coin1 5s linear infinite';
-    coin2.style.animation = 'coin2 3.5s linear infinite';
+    rat.style.animation = 'rat 9.4s linear infinite';
+    coin1.style.animation = 'coin1 5.1s linear infinite';
+    coin2.style.animation = 'coin2 3.2s linear infinite';
     coin3.style.animation = 'coin3 4s linear infinite';
     coin4.style.animation = 'coin4 3s linear infinite'; 
     
@@ -70,7 +70,7 @@ startbtn.addEventListener('click', function() {
                     clearInterval(jumpInterval);
                     fall();
                 }
-            },30);
+            },20);
         } 
     }
     function fall(){
@@ -93,16 +93,16 @@ startbtn.addEventListener('click', function() {
         switch (event.key){
             case "ArrowUp":
                 jump();
-                jumpsound.play();
+                jumpSound.play();
                 break;
         }
     });
     topKey.addEventListener("click",function(){
         jump();
-        jumpsound.play();
+        jumpSound.play();
     });
     //Making the man to move left and right
-    var move =25;
+    var move =35;
     window.onload=(e)=>{
         man.style.position="relative";
         man.style.left= '30px';
@@ -132,8 +132,9 @@ startbtn.addEventListener('click', function() {
     // logic of the game
     // checking the collition of the obstalces
     var n = 0; 
+    var remaining = 70;
     setInterval(()=>{
-        score.innerText=`score:${n}`;
+        score.innerText=`Coins:${n}`;
 
         var spiderLeft = (Math.abs(spider.getBoundingClientRect().left)+30);
         var spiderRight = Math.abs(spider.getBoundingClientRect().right  ) ;
@@ -205,29 +206,45 @@ startbtn.addEventListener('click', function() {
                 location.href='./gameoverpage2.html';
             },0)   
         } 
-
         if (((coin1Left < manLeft && manLeft < coin1Right) || (coin1Left < manRight && manRight < coin1Right))) {
-            n+=1;
+            n += 1;
+            coin1.style.visibility = 'hidden';
             coinsound.play();
+            setTimeout(function () {
+                coin1.style.visibility = 'visible';
+            }, 2000); 
+            
         }
 
         if (((coin2Left < manLeft && manLeft < coin2Right) || (coin2Left < manRight && manRight < coin2Right))) {
-            n+=1;
+            n += 1;
+            coin2.style.visibility = 'hidden';
             coinsound.play();
+            setTimeout(function () {
+                coin2.style.visibility = 'visible';
+            }, 2000); 
         }
 
         if (((coin3Left < manLeft && manLeft < coin3Right) || (coin3Left < manRight && manRight < coin3Right))) {
-            n+=1;
+            n += 1;
+            coin3.style.visibility = 'hidden';
             coinsound.play();
+            setTimeout(function () {
+                coin3.style.visibility = 'visible';
+            }, 2000);
         }
 
         if (((coin4Left < manLeft && manLeft < coin4Right) || (coin4Left < manRight && manRight < coin4Right))) {
-            n+=1;
-            coinsound.play();
+            n += 1;
+            coin4.style.visibility = 'hidden';
+            coinsound.play(); 
+            setTimeout(function () {
+            coin4.style.visibility = 'visible';
+            }, 2000);
         }
 
 
-        if (n==100){
+        if (n==75){
             setTimeout(() => {
                 location.href='./congratspage.html';
             },0) 

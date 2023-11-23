@@ -7,7 +7,7 @@
 }
 body{
     background-image: url("./Asserts/Level\ 4\ \(1\).png");
-    background-size: 105%;
+    background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 }
@@ -95,7 +95,7 @@ button{
     transition: all 0.1s;
     /* border: red 2px solid; */
 }
-#rat,#spider,#snake,#centipedie,#coin1,#coin2,#coin3,#coin4{
+#rat,#spider,#snake,#centipedie{
     position: relative;
     bottom: 20px;
     /* border: red 2px solid; */
@@ -195,7 +195,7 @@ button{
 }
 .coins{
     position: relative;
-    bottom: 90px;
+    bottom: 120px;
     height: 100px;
 }
 .mobile-reponsive-controls{

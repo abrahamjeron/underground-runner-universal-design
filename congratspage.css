@@ -37,7 +37,7 @@ body{
 }
 .game-won-popup #nextlevelbtn{
     position: relative;
-    left: 45%;
+    left: 40%;
     top: 22px;
     text-decoration: none;
     color: black;
@@ -45,6 +45,19 @@ body{
     width: 60px;
     padding: 15px 10px 15px 10px;
     border-radius: 5px;
+    font-size: 0.7rem;
+}
+#nobtn{
+    position: relative;
+    left: 35%;
+    top: 22px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 3px 10px 3px;
+    border-radius: 7px;
+    font-size: 0.7rem;
+    border: 3px solid #f0a92c ;
+    background-color:#f0a92c;
 }
 @media screen and (max-width:600px) {
     body{
